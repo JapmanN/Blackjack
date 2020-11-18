@@ -31,5 +31,18 @@ public class Deck {
         }
         
         this.cards = newDeck;
-    }    
+    }
+
+    // Create three getters and setters
+    public void removeCard(int card) {
+        this.cards.remove(card);
+    }
+    
+    public String getCard(int card) {
+        return this.cards.get(card);
+    }
+    
+    public void addCard(String addCard) {
+        this.cards.add(addCard);
+    }
 }
