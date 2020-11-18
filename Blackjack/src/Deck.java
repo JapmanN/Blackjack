@@ -17,6 +17,15 @@ public class Deck {
         }
     }
     
+    // Override .toString()
+    public String toString() {
+        String listOfCards = "";
+        for(String card : this.cards) {
+            listOfCards += card + "\n";
+        }
+        return listOfCards;
+    }    
+    
     public void shuffleDeck() {
         // Take cards from original deck, randomize them, and store them in a temporary deck. Then set the original deck to the temporary deck
         ArrayList<String> newDeck = new ArrayList<String>();
