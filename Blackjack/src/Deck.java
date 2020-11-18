@@ -54,4 +54,10 @@ public class Deck {
     public void addCard(String addCard) {
         this.cards.add(addCard);
     }
+    
+    // Gets cards from the deck
+    public void draw(Deck comingFrom) {
+        this.cards.add(comingFrom.getCard(0));
+        comingFrom.removeCard(0);
+    }    
 }
