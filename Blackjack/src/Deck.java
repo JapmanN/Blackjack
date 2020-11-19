@@ -65,4 +65,40 @@ public class Deck {
     public int deckSize() {
         return this.cards.size();
     }
+    
+    // Gets the value of the cards
+    public int returnHandValue() {
+        int value = 0;
+        
+        for(String card : this.cards) {
+            if("ACE".equals(String.valueOf(card).substring(0, 3))) {
+                value += 1;
+            } else if ("TWO".equals(String.valueOf(card).substring(0, 3))) {
+                value += 2;
+            } else if("THREE".equals(String.valueOf(card).substring(0, 5))) {
+                value += 3;
+            } else if("FOUR".equals(String.valueOf(card).substring(0, 4))) {
+                value += 4;
+            } else if("FIVE".equals(String.valueOf(card).substring(0, 4))) {
+                value += 5;
+            } else if("SIX".equals(String.valueOf(card).substring(0, 3))) {
+                value += 6;
+            } else if("SEVEN".equals(String.valueOf(card).substring(0, 5))) {
+                value += 7;
+            } else if("EIGHT".equals(String.valueOf(card).substring(0, 5))) {
+                value += 8;
+            } else if("NINE".equals(String.valueOf(card).substring(0, 4))) {
+                value += 9;
+            } else if("TEN".equals(String.valueOf(card).substring(0, 3))) {
+                value += 10;
+            } else if("JACK".equals(String.valueOf(card).substring(0, 4))) {
+                value += 10;
+            } else if("QUEEN".equals(String.valueOf(card).substring(0, 5))) {
+                value += 10;
+            } else if("KING".equals(String.valueOf(card).substring(0, 4))) {
+                value += 10;
+            }
+        }
+        return value;
+    }
 }
