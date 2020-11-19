@@ -5,7 +5,7 @@ public class Deck {
     private ArrayList<String> cards;
 
     public Deck() {
-        this.cards = new ArrayList<String>();
+        this.cards = new ArrayList<>();
     }
     
     // For Each loop to make new deck
@@ -28,7 +28,7 @@ public class Deck {
     
     public void shuffleDeck() {
         // Take cards from original deck, randomize them, and store them in a temporary deck. Then set the original deck to the temporary deck
-        ArrayList<String> newDeck = new ArrayList<String>();
+        ArrayList<String> newDeck = new ArrayList<>();
         Random randNum = new Random();
         int randCardIndex = 0;
         int sizeOfArray = this.cards.size();
